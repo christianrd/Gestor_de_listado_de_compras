@@ -7,8 +7,9 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {	
-	SList shpping;
+	SList shopping;
 	int menu;
+	int z = 1;
 	bool remain  = true;
 	string name;
 	int key;
@@ -33,19 +34,19 @@ int main(int argc, char const *argv[])
 		switch(menu)
 		{
 			case 1:
-				Shopping.printList();
+				shopping.printList();
 			case 2:
 				cout << "Product name => ";
 				cin >> name;
 				cout << endl << "number of product do you want to add => ";
 				cin >> key;
-				Shopping.addNode(z, name, key);
+				shopping.addNode(z, name, key);
 				z++;
 			case 3:
-				shpping.printList();
+				shopping.printList();
 				cout << endl << "Id product to eliminate => ";
 				cin >> key;
-				Shopping.deleteNode(key);
+				shopping.deleteNode(key);
 			case 4:
 				cout << "Exiting the app, thanks for using the ShoppingList app..." << endl;
 				return EXIT_SUCCESS;

@@ -12,7 +12,7 @@ SList::SList()
 	temp = NULL;
 }
 
-void SList:: addNode(int id, string addName, int addQuantity)
+void SList::addNode(int id, string addName, int addQuantity)
 {
 	nodePtr addElem = new node;
 	addElem->next = NULL;
@@ -37,7 +37,7 @@ void SList:: addNode(int id, string addName, int addQuantity)
 	cout << end;
 }
 
-void SList:: deleteNode(int delData)
+void SList::deleteNode(int delData)
 {
 	nodePtr delPtr = NULL;
 	temp = head;
@@ -68,7 +68,7 @@ void SList:: deleteNode(int delData)
 	}
 }
 
-void SList:: printList()
+void SList::printList()
 {
 	current = head;
 	cout << "Your list: " endl;

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-Class SList
+class SList
 {
 private:
 	typedef struct node
@@ -21,5 +21,5 @@ public:
 	void addNode(int id, std::string addName, int addQuantity);
 	void deleteNode(int delData);
 	void printList();
-}
+};
 
